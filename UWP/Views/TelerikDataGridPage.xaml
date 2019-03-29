@@ -18,15 +18,12 @@
                     <!--TODO WTS:
                       Remove this column definitions and define columns for your data.
                       Consider adding header properties to Resources.resw-->
-                    <tg:DataGridTextColumn PropertyName="OrderId" />
-                    <tg:DataGridDateColumn PropertyName="OrderDate" />
-                    <tg:DataGridTextColumn PropertyName="Company" />
-                    <tg:DataGridTextColumn PropertyName="ShipTo" />
-                    <tg:DataGridNumericalColumn PropertyName="OrderTotal" />
-                    <tg:DataGridTextColumn PropertyName="Status" />
-                    <tg:DataGridTemplateColumn Header="Symbol">
+                    <tg:DataGridTextColumn PropertyName="CustomerId" />
+                    <tg:DataGridDateColumn PropertyName="FirstName" />
+                    <tg:DataGridTextColumn PropertyName="LastName" />
+                    <!--<tg:DataGridTemplateColumn Header="Symbol">
                         <tg:DataGridTemplateColumn.CellContentTemplate>
-                            <DataTemplate x:DataType="model:SampleOrder">
+                            <DataTemplate x:DataType="model:Customer">
                                 <FontIcon
                                       HorizontalAlignment="Left"
                                       Margin="{StaticResource MediumLeftRightMargin}"
@@ -34,7 +31,7 @@
                                       Glyph="{x:Bind Symbol}" />        
                             </DataTemplate>
                         </tg:DataGridTemplateColumn.CellContentTemplate>
-                    </tg:DataGridTemplateColumn>
+                    </tg:DataGridTemplateColumn>-->
                 </tg:RadDataGrid.Columns>
             </tg:RadDataGrid>
         </Grid>

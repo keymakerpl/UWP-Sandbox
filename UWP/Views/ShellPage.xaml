@@ -39,6 +39,7 @@
             <winui:NavigationViewItem x:Uid="Shell_Tabbed" Icon="Document" helpers:NavHelper.NavigateTo="UWP.ViewModels.TabbedViewModel" />
             <winui:NavigationViewItem x:Uid="Shell_Camera" Icon="Document" helpers:NavHelper.NavigateTo="UWP.ViewModels.CameraViewModel" />
             <winui:NavigationViewItem x:Uid="Shell_ImageGallery" Icon="Document" helpers:NavHelper.NavigateTo="UWP.ViewModels.ImageGalleryViewModel" />
+            <winui:NavigationViewItem x:Uid="Shell_Customer" Icon="Contact" helpers:NavHelper.NavigateTo="UWP.ViewModels.CustomerViewModel" />
         </winui:NavigationView.MenuItems>
         <i:Interaction.Behaviors>
             <behaviors:NavigationViewHeaderBehavior

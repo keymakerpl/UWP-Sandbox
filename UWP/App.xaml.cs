@@ -1,9 +1,10 @@
 ﻿using System;
-
+using Microsoft.EntityFrameworkCore;
 using UWP.Services;
-
+using UWP.Models;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
+using UWP.Core.Services;
 
 namespace UWP
 {
@@ -18,6 +19,11 @@ namespace UWP
 
         public App()
         {
+            using (var db = new RmaBuddyContext())
+            {
+                db.Database.Migrate();
+            }
+
             InitializeComponent();
 
             // Deferred execution until used. Check https://msdn.microsoft.com/library/dd642331(v=vs.110).aspx for further info on Lazy<T> class.

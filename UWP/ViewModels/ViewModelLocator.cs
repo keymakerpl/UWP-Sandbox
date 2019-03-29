@@ -29,6 +29,7 @@ namespace UWP.ViewModels
             Register<ImageGalleryViewModel, ImageGalleryPage>();
             Register<ImageGalleryDetailViewModel, ImageGalleryDetailPage>();
             Register<SettingsViewModel, SettingsPage>();
+            Register<CustomerViewModel, CustomerView>();
         }
 
         public SettingsViewModel SettingsViewModel => SimpleIoc.Default.GetInstance<SettingsViewModel>();
@@ -56,6 +57,8 @@ namespace UWP.ViewModels
         public ShellViewModel ShellViewModel => SimpleIoc.Default.GetInstance<ShellViewModel>();
 
         public NavigationServiceEx NavigationService => SimpleIoc.Default.GetInstance<NavigationServiceEx>();
+
+        public CustomerViewModel CustomerViewModel => SimpleIoc.Default.GetInstance<CustomerViewModel>();
 
         public void Register<VM, V>()
             where VM : class
